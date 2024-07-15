@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="overlay"></div>
+  <div class="feedback-form feedback-form--hidden--call">
+    <div class="feedback-form__burger">
+      <button><img src="img/close.png" alt="" /></button>
+    </div>
+    <div class="feedback-form__container">
+      <h2 class="feedback-form__title">Заказать звонок</h2>
+      <form action="#" method="post">
+        <input type="tel" id="phone" name="phone" placeholder="Телефон" required />
+      </form>
+      <p class="feedback-form__text">
+        Нажимая “отправить”, вы даете согласие <br />
+        на <span>обработку персональных данных</span> и <br />
+        соглашаетесь с нашей <span> политикой<br />конфиденциальности</span>
+      </p>
+      <button class="feedback-form__button" type="submit">
+        <img src="./img/zakazat.png" alt="" />
+      </button>
+    </div>
+  </div>
+
+  <div class="overlay"></div>
+  <div class="feedback-form feedback-form--hidden--feetback">
+    <div class="feedback-form__burger">
+      <button><img src="./img/close.png" alt="burger" /></button>
+    </div>
+    <div class="feedback-form__container">
+      <h2 class="feedback-form__title">Обратная связь</h2>
+      <form action="#" method="post">
+        <input type="text" id="name" name="name" placeholder="Имя" required />
+        <input type="tel" id="phone" name="phone" placeholder="Телефон" required />
+        <input type="email" id="email" name="email" placeholder="Электронная почта" required />
+        <textarea id="message" name="message" rows="4" placeholder="Сообщение" required></textarea>
+      </form>
+      <p class="feedback-form__text">
+        Нажимая “отправить”, вы даете согласие <br />
+        на <span>обработку персональных данных</span> и <br />
+        соглашаетесь с нашей<span>политикой<br />конфиденциальности</span>
+      </p>
+      <button class="feedback-form__button" type="submit">
+        <img src="./img/otpravit.png" alt="otpravit" />
+      </button>
+    </div>
+  </div>
+
+  
+  <div class="wrapper-global">
+
+  </div>
+  <div class="wrapper">
+    <div class="modal-window modal-window-none">
+      <header class="modal-menu">
+        <ul class="modal-menu__list">
+          <li class="modal-menu__item">
+            <button class="modal-menu__item--burger">
+              <img src="./img/ic_burger.png" alt="burger" />
+            </button>
+          </li>
+  
+          <li class="modal-menu__item">
+            <button class="modal-menu__item--logo"> 
+              <img src="./img/Group.png" alt="logo" />
+            </button>
+          </li>
+  
+          <li class="modal-menu__item">
+            <button>
+              <img src="./img/ic_search.png" alt="search" />
+            </button>
+          </li>
+        </ul>
+      </header>
+  
+      <nav class="modal-point">
+        <ul class="modal-point__menu">
+          <li class="modal-point__item"><a href="#">Ремонт техники</a></li>
+          <li class="modal-point__item"><a href="#">Услуги и сервисы</a></li>
+          <li class="modal-point__item">
+            <a href="#">Корпоративным клиентам</a>
+          </li>
+          <li class="modal-point__item"><a href="#">Продавцам техники</a></li>
+          <li class="modal-point__item"><a href="#">Партнерам</a></li>
+          <li class="modal-point__item"><a href="#">Производителям</a></li>
+          <li class="modal-point__item">
+            <a href="#">Наши сервисные центры</a>
+          </li>
+          <li class="modal-point__item"><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+  
+      <div class="modal-contact">
+        <ul class="modal-contact__list">
+          <li class="modal-contact__item">
+            <button>
+              <img src="./img/ic_chat copy.png" alt="chat" />
+            </button>
+          </li>
+  
+          <li class="modal-contact__item">
+            <button>
+              <img src="./img/ic_chat.png" alt="chat" />
+            </button>
+          </li>
+  
+          <li class="modal-contact__item">
+            <button>
+              <img src="./img/ic_profile.png" alt="profile" />
+            </button>
+          </li>
+        </ul>
+  
+        <p class="modal-contact__adress--mail">
+          <a href="mail@cps.com">mail@cps.com</a>
+        </p>
+        <p class="modal-contact__adress--number">
+          <a href="tel:+8 800 890 8900">8 800 890 8900</a>
+        </p>
+  
+        <div class="modal-lang">
+          <ul class="modal-lang__list">
+            <li class="modal-lang__item"><button>RU</button></li>
+            <li class="modal-lang__item"><button>EN</button></li>
+            <li class="modal-lang__item"><button>CH</button></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <header class="header">
+      <div class="header__first">
+        <ul class="header__first-list">
+          <li class="header__first-item">
+            <button>
+              <img src="./img/ic_burger.png" alt="" />
+            </button>
+          </li>
+          <li class="header__first-item">
+            <button>
+              <img src="./img/Group.png" alt="" />
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="header__second">
+        <ul class="header__second-list">
+          <li class="header__second-item">
+            <button>
+              <img src="./img/ic_call.png" alt="" />
+            </button>
+          </li>
+          <li class="header__second-item">
+            <button>
+              <img src="./img/ic_chat.png" alt="" />
+            </button>
+          </li>
+          <li class="header__second-item">
+            <button>
+              <img src="./img/ic_profile.png" alt="" />
+            </button>
+          </li>
+          <li class="header__second-item">
+            <button>
+              <img src="./img/ic_repair.png" alt="" />
+            </button>
+          </li>
+          <li class="header__second-item">
+            <button>
+              <img src="./img/ic_checkstatus.png" alt="" />
+            </button>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="main-description">
+        <h1 class="main-description__title">Услуги и сервисы</h1>
+
+        <nav class="main-navigation">
+          <ul class="main-navigation__list">
+            <li class="main-navigation__item">Ремонтируемые устройства</li>
+            <li class="main-navigation__item">Дополнительные услуги</li>
+            <li class="main-navigation__item">Цены на услуги</li>
+            <li class="main-navigation__item">Специальные цены</li>
+            <li class="main-navigation__item">Адреса сервисных центров</li>
+            <li class="main-navigation__item">Отзывы</li>
+          </ul>
+        </nav>
+
+        <article class="main-article">
+          <div class="main-article__text">
+            <p class="main-article__first--text">
+              Мы являемся авторизованным сервисным центром по ремонту техники
+              Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+              официальной гарантией производителя.
+            </p>
+
+            <p class="main-article__second--text hidden">
+              Мы успешно работаем с 1992 года и заслужили репутацию надежного
+              партнера, что подтверждает большое количество постоянных
+              клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям
+              и, в свою очередь, советуют нас родным и близким.
+            </p>
+            <button class="main-article__button">Читать далее</button>
+          </div>
+
+          <div class="main-article__image">
+            <img class="image" src="./img/background.jpg" alt="picture" />
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <div class="header-second">
+      <h2>
+        Ремонт техники различных <br />
+        брендов
+      </h2>
+    </div>
+
+    <div class="content">
+      <div class="swiper swiper1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="content-card">
+              <div class="content-card__images">
+                <img src="./img/Bitmap.svg" alt="lenovo" />
+                <a href="#">
+                  <img src="./img/ic_go.svg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="content-card">
+              <div class="content-card__images">
+                <img src="./img/sumsung.svg" alt="lenovo" />
+                <a href="#">
+                  <img src="./img/ic_go.svg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="content-card">
+              <div class="content-card__images">
+                <img src="./img/apple.svg" alt="lenovo" />
+                <a href="#">
+                  <img src="./img/ic_go.svg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="content-card">
+              <div class="content-card__images">
+                <img src="./img/boshh.svg" alt="lenovo" />
+                <a href="#">
+                  <img src="./img/ic_go.svg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="content-card">
+              <div class="content-card__images">
+                <img src="./img/hp.svg" alt="lenovo" />
+                <a href="#">
+                  <img src="./img/ic_go.svg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="content-card">
+              <div class="content-card__images">
+                <img src="./img/acer.svg" alt="lenovo" />
+                <a href="#">
+                  <img src="./img/ic_go.svg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="content-card">
+              <div class="content-card__images">
+                <img src="./img/sony.svg" alt="lenovo" />
+                <a href="#">
+                  <img src="./img/ic_go.svg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="content-card">
+              <div class="content-card__images">
+                <img src="./img/sonik.svg" alt="lenovo" />
+                <a href="#">
+                  <img src="./img/ic_go.svg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="content-card">
+              <div class="content-card__images">
+                <img src="./img/Bitmap.svg" alt="lenovo" />
+                <a href="#">
+                  <img src="./img/ic_go.svg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+    <div class="content-swiper--768">
+      <div class="swiper-768">
+        <div class="content-card--block">
+          <div class="content-card__images--block">
+            <img src="./img/Bitmap.svg" alt="lenovo" />
+            <a href="#">
+              <img src="./img/ic_go.svg" alt="" />
+            </a>
+          </div>
+        </div>
+
+        <div class="content-card--block">
+          <div class="content-card__images--block">
+            <img src="./img/sumsung.svg" alt="lenovo" />
+            <a href="#">
+              <img src="./img/ic_go.svg" alt="" />
+            </a>
+          </div>
+        </div>
+
+        <div class="content-card--block">
+          <div class="content-card__images--block">
+            <img src="./img/apple.svg" alt="lenovo" />
+            <a href="#">
+              <img src="./img/ic_go.svg" alt="" />
+            </a>
+          </div>
+        </div>
+
+        <div class="content-card--block">
+          <div class="content-card__images--block">
+            <img src="./img/boshh.svg" alt="lenovo" />
+            <a href="#">
+              <img src="./img/ic_go.svg" alt="" />
+            </a>
+          </div>
+        </div>
+
+        <div class="content-card--block">
+          <div class="content-card__images--block">
+            <img src="./img/hp.svg" alt="lenovo" />
+            <a href="#">
+              <img src="./img/ic_go.svg" alt="" />
+            </a>
+          </div>
+        </div>
+
+        <div class="content-card--block">
+          <div class="content-card__images--block">
+            <img src="./img/acer.svg" alt="lenovo" />
+            <a href="#">
+              <img src="./img/ic_go.svg" alt="" />
+            </a>
+          </div>
+        </div>
+
+        <div class="content-card--block hidden-768px">
+          <div class="content-card__images--block">
+            <img src="./img/sony.svg" alt="lenovo" />
+            <a href="#">
+              <img src="./img/ic_go.svg" alt="" />
+            </a>
+          </div>
+        </div>
+
+        <div class="content-card--block hidden-768px">
+          <div class="content-card__images--block">
+            <img src="./img/sonik.svg" alt="lenovo" />
+            <a href="#">
+              <img src="./img/ic_go.svg" alt="" />
+            </a>
+          </div>
+        </div>
+
+        <div class="content-card--block hidden-1120px">
+          <div class="content-card__images--block">
+            <img src="./img/Bitmap.svg" alt="lenovo" />
+            <a href="#">
+              <img src="./img/ic_go.svg" alt="" />
+            </a>
+          </div>
+        </div>
+
+        <div class="content-card--block hidden-1120px">
+          <div class="content-card__images--block">
+            <img src="./img/apple.svg" alt="lenovo" />
+            <a href="#">
+              <img src="./img/ic_go.svg" alt="" />
+            </a>
+          </div>
+        </div>
+
+        <div class="content-card--block hidden-1120px">
+          <div class="content-card__images--block">
+            <img src="./img/acer.svg" alt="lenovo" />
+            <a href="#">
+              <img src="./img/ic_go.svg" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <button class="button-768 button--rotated">Показать все</button>
+    </div>
+
+    <!-- место для свайпера -->
+
+    <div class="header-third">
+      <h3>
+        Ремонт различных видов <br />
+        техники
+      </h3>
+    </div>
+
+    <div class="content2">
+      <div class="swiper swiper2">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+
+          <div class="swiper-slide">
+            <div class="second-content-card">
+              <p>Ремонт ноутбуков</p>
+              <img src="./img/ic_go.svg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="second-content-card">
+              <p>Ремонт ноутбуков</p>
+              <img src="./img/ic_go.svg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="second-content-card">
+              <p>Ремонт ноутбуков</p>
+              <img src="./img/ic_go.svg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="second-content-card">
+              <p>Ремонт ноутбуков</p>
+              <img src="./img/ic_go.svg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="second-content-card">
+              <p>Ремонт ноутбуков</p>
+              <img src="./img/ic_go.svg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="second-content-card">
+              <p>Ремонт ноутбуков</p>
+              <img src="./img/ic_go.svg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="second-content-card">
+              <p>Ремонт ноутбуков</p>
+              <img src="./img/ic_go.svg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="second-content-card">
+              <p>Ремонт ноутбуков</p>
+              <img src="./img/ic_go.svg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="second-content-card">
+              <p>Ремонт ноутбуков</p>
+              <img src="./img/ic_go.svg" alt="" />
+            </div>
+          </div>
+          ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+    <div class="content-cards">
+      <div class="content-cards__item">
+        <p>Ремонт ноутбуков</p>
+        <img src="./img/ic_go.svg" alt="" />
+      </div>
+
+      <div class="content-cards__item">
+        <p>Ремонт ноутбуков</p>
+        <img src="./img/ic_go.svg" alt="" />
+      </div>
+
+      <div class="content-cards__item">
+        <p>Ремонт ноутбуков</p>
+        <img src="./img/ic_go.svg" alt="" />
+      </div>
+
+      <div class="content-cards__item hidden-all">
+        <p>Ремонт ноутбуков</p>
+        <img src="./img/ic_go.svg" alt="" />
+      </div>
+
+      <div class="content-cards__item hidden-all">
+        <p>Ремонт ноутбуков</p>
+        <img src="./img/ic_go.svg" alt="" />
+      </div>
+
+      <div class="content-cards__item hidden-all">
+        <p>Ремонт ноутбуков</p>
+        <img src="./img/ic_go.svg" alt="" />
+      </div>
+
+      <div class="content-cards__item hidden-all">
+        <p>Ремонт ноутбуков</p>
+        <img src="./img/ic_go.svg" alt="" />
+      </div>
+
+      <div class="content-cards__item hidden-all">
+        <p>Ремонт ноутбуков</p>
+        <img src="./img/ic_go.svg" alt="" />
+      </div>
+
+      <div class="content-cards__item hidden-all">
+        <p>Ремонт ноутбуков</p>
+        <img src="./img/ic_go.svg" alt="" />
+      </div>
+
+      <button class="content-cards__button button--rotated">
+        Показать все
+      </button>
+    </div>
+
+    <div class="header-fourth">
+      <h3>Цены на услуги</h3>
+    </div>
+
+    <div class="swiper swiper3">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="third-content-card">
+            <div class="third-content-card__block">
+              <p>
+                <span>Ремонтные услуги</span><br />
+                Тестирование с выдачей технического заключения
+              </p>
+            </div>
+            <div class="third-content-card__block">
+              <p><span>Цена</span><br />Бесплатно</p>
+            </div>
+            <div class="third-content-card__block">
+              <p><span>Срок</span><br />30-120 мин</p>
+            </div>
+            <button class="third-button">
+              <img src="./img/Group 10.svg" alt="" />
+            </button>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="third-content-card">
+            <div class="third-content-card__block">
+              <p>
+                Ремонтные услуги <br />
+                Тестирование с выдачей технического заключения
+              </p>
+            </div>
+            <div class="third-content-card__block">
+              <p>Цена<br />Бесплатно</p>
+            </div>
+            <div class="third-content-card__block">
+              <p>Срок<br />30-120 мин</p>
+            </div>
+            <button class="third-button">
+              <img src="./img/Group 10.svg" alt="" />
+            </button>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="third-content-card">
+            <div class="third-content-card__block">
+              <p>
+                Ремонтные услуги <br />
+                Тестирование с выдачей технического заключения
+              </p>
+            </div>
+            <div class="third-content-card__block">
+              <p>Цена<br />Бесплатно</p>
+            </div>
+            <div class="third-content-card__block">
+              <p>Срок<br />30-120 мин</p>
+            </div>
+            <button class="third-button">
+              <img src="./img/Group 10.svg" alt="" />
+            </button>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="third-content-card">
+            <div class="third-content-card__block">
+              <p>
+                Ремонтные услуги <br />
+                Тестирование с выдачей технического заключения
+              </p>
+            </div>
+            <div class="third-content-card__block">
+              <p>Цена<br />Бесплатно</p>
+            </div>
+            <div class="third-content-card__block">
+              <p>Срок<br />30-120 мин</p>
+            </div>
+            <button class="third-button">
+              <img src="./img/Group 10.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="prices-container-title">
+      <div class="prices-container-title__row">
+        <p>Ремонтные услуги</p>
+        <div class="prices-container-title__rowsec">
+          <p>Цена</p>
+          <p>Срок</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="prices-container">
+      <div class="prices-container__row">
+        <p>Диагностика</p>
+        <div class="prices-container__row--left">
+          <p>Бесплатно</p>
+          <p>30 мин</p>
+          <button class="prices-container__button">
+            <img src="./img/zakazat.png" alt="price" />
+          </button>
+        </div>
+      </div>
+
+      <div class="prices-container__row">
+        <p>Диагностика</p>
+        <div class="prices-container__row--left">
+          <p>Бесплатно</p>
+          <p>30 мин</p>
+          <button class="prices-container__button">
+            <img src="./img/zakazat.png" alt="price" />
+          </button>
+        </div>
+      </div>
+
+      <div class="prices-container__row">
+        <p>Диагностика</p>
+        <div class="prices-container__row--left">
+          <p>Бесплатно</p>
+          <p>30 мин</p>
+          <button class="prices-container__button">
+            <img src="./img/zakazat.png" alt="price" />
+          </button>
+        </div>
+      </div>
+
+      <div class="prices-container__row">
+        <p>Диагностика</p>
+        <div class="prices-container__row--left">
+          <p>Бесплатно</p>
+          <p>30 мин</p>
+          <button class="prices-container__button">
+            <img src="./img/zakazat.png" alt="price" />
+          </button>
+        </div>
+      </div>
+
+      <div class="prices-container__row">
+        <p>Диагностика</p>
+        <div class="prices-container__row--left">
+          <p>Бесплатно</p>
+          <p>30 мин</p>
+          <button class="prices-container__button">
+            <img src="./img/zakazat.png" alt="price" />
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-description-info">
+      <p class="main-description-info__text">
+        Все цены указаны с учетом НДС.<br />
+        Стоимость ремонта указана на<br />
+        единичную услугу. Для получения<br />
+        коммерческого предложения на<br />
+        постоянное обслуживание, оставьте заявку.
+      </p>
+    </div>
+
+    <div class="main-description-link">
+      <a href="#">Получить коммерческое<br />предложение<span><img src="./img/Line.svg" alt="" /></span></a>
+    </div>
+
+    <footer class="footer">
+      <p><span>© 2019 CPS</span><br />Разработано командой Apesong</p>
+      <p>Политика конфиденциальности</p>
+      <p>
+        <span>Информация, размещенная на данной</span><br />
+        странице, не является публичной офертой
+      </p>
+    </footer>
+  </div>
+</body>
+
+</html>

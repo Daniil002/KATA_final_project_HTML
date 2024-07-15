@@ -1,0 +1,125 @@
+.modal-window {
+  position: fixed; // Фиксируем блок
+  left: 0; // Прижимаем к левой стороне
+  top: 0; // Прижимаем к верхней части
+  width: 320px; // Ширина блока
+  height: 100vh; // Высота блока на весь экран
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; // Добавляем это
+  box-shadow: 5px 0 15px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 1); // Непрозрачный фон
+
+  .modal-menu__list {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 23px;
+  }
+
+  .modal-menu__item:nth-child(2) {
+    transform: translateX(-30px);
+  }
+
+  .modal-point {
+    margin-left: 20px;
+    margin-top: 37px;
+
+    &__item {
+      margin-bottom: 32px;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        background-image: url("./img/highlight.png");
+        width: 4px;
+        height: 32px;
+        left: -20px;
+        top: -5px;
+        bottom: 83.11%;
+        display: none;
+      }
+
+      &:hover::before {
+        display: block;
+      }
+
+      &:hover {
+        color: rgb(126, 126, 130);
+      }
+    }
+  }
+
+  .modal-contact {
+    margin: 20px 0; // Отступ сверху и снизу
+    display: flex;
+    flex-direction: column;
+
+    &__list {
+      margin-left: 16px;
+      display: flex;
+      gap: 16px;
+
+
+    }
+
+    &__adress--mail,
+    &__adress--number {
+      margin-top: 16px;
+      margin-left: 16px;
+    }
+
+    &__adress--number>a {
+      font-family: "TTLakes-Bold";
+      font-size: 26px;
+    }
+  }
+
+  .modal-lang {
+    &__list {
+      display: flex;
+      margin-left: 16px;
+      margin-top: 40px;
+    }
+
+    &__item:not(:first-child) {
+      margin-left: 16px;
+    }
+
+    &__item:hover {
+      color: rgb(126, 126, 130);
+    }
+  }
+}
+
+
+.modal-window-none {
+  display: none;
+}
+
+
+@media (min-width: 1388px) {
+  .modal-window-none {
+    display: flex;
+    
+  }
+
+  .modal-window {
+    box-shadow: none;
+  }
+
+  .modal-menu {
+
+    &__item--burger {
+      display: none;
+    }
+
+    &__item--logo {
+      margin-right: 78px;
+    }
+
+  }
+
+}

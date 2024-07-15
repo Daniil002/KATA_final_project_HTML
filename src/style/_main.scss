@@ -1,0 +1,41 @@
+.main-description {
+    margin-left: 16px;
+
+    &__title {
+        font-size: 28px;
+    }
+}
+
+.main-navigation__list {
+    display: flex;
+    white-space: nowrap;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.main-navigation__item {
+    border: 2px solid transparent;
+    /* Прозрачная рамка по умолчанию */
+    border-radius: 6px;
+    margin-left: 25px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    padding: 8px;
+    color: rgb(126, 126, 130);
+
+    &:hover {
+        border: 2px solid rgb(184, 255, 236);
+        border-radius: 6px;
+        background-color: white;
+        color: rgb(27, 28, 33);
+    }
+
+    &:nth-child(1) {
+        margin-left: 0px;
+    }
+}
+
+

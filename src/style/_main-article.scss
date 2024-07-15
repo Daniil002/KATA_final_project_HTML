@@ -1,0 +1,50 @@
+.main-article {
+    margin-right: 16px;
+    
+    &__button {
+        margin-left: 35px;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            background: url("./img/icon.png") no-repeat;
+            width: 24px;
+            height: 24px;
+            left: -23px;
+            top: 3px;
+        }
+    }
+}
+
+.image {
+    margin-top: 16px;
+    width: 320px;
+    height: 230.8px;
+    
+}
+
+
+@media (min-width: 768px) {
+
+    .main-article {
+        display: flex;
+        justify-content: space-between;
+
+
+
+        &__text {
+            width: 312px;
+            height: 160px;
+        }
+
+
+    }
+
+    .image {
+        width: 360px;
+        height: 259.66px;
+        
+        
+    }
+}
