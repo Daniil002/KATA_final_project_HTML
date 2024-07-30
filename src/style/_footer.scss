@@ -13,7 +13,9 @@ footer {
     p:first-child {
         line-height: 10px;
     }
-
+    p {
+        color: $hover-color;
+    }
 }
 
 @media (min-width: 768px) {

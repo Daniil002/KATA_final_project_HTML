@@ -4,11 +4,12 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: -1;
+    background-color: rgba(244, 241, 241, 0.7);
+    z-index: 10;
 }
 
-.feedback-form {
+.feedback-form,
+.call-form{
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
@@ -19,7 +20,9 @@
     position: fixed;
     right: 0;
     height: 100%;
-    z-index: 2;
+    z-index: 11;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.2);
+    
 
     &__title {
         font-size: 24px;
@@ -79,16 +82,14 @@
 
     @media (min-width: 720px) {
         width: 440px;
+
+
     }
 
-    &--hidden--call {
-        display: none;
-    }
 
-    &--hidden--feetback {
-        display: none;
-    }
 }
+
+
 
 input, textarea {
     margin-bottom: 16px;
@@ -99,10 +100,17 @@ input, textarea {
     box-sizing: border-box;
     border-radius: 8px;
     border: 1px solid #ccc;
+    outline: none;
+    
 
     @media (min-width: 720px) {
         width: 376px;
     }
+}
+
+input:focus, textarea:focus,
+input.clicked, textarea.clicked {
+    border-color: rgb(255, 62, 121);
 }
 
 textarea {
@@ -110,6 +118,10 @@ textarea {
 }
 
 
-.overlay {
+.overlay--hidden {
+    display: none;
+}
+
+.hidden-form {
     display: none;
 }

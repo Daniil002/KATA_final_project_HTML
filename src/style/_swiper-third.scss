@@ -34,6 +34,10 @@
 
 }
 
+.header-fourth {
+    height: 80px;
+}
+
 .prices-container {
     display: none;
 }
@@ -113,6 +117,24 @@
 
         p:nth-child(2) {
             margin-right: 30px;
+        }
+    }
+}
+
+@media (min-width: 1388px) {
+    .prices-container {
+        &__row--left {
+            justify-content: space-between;
+        }
+
+}
+
+    .prices-container-title__rowsec {
+        justify-content: space-between;
+        
+
+        p:nth-child(2) {
+            margin-right: 450px;
         }
     }
 }

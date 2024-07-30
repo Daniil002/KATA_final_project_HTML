@@ -8,7 +8,6 @@
     margin-left: 16px;
     margin-top: 16px;
     margin-bottom: 16px;
-    
 
     img {
         width: 40px;
@@ -16,28 +15,23 @@
         align-self: flex-end;
         margin-bottom: 16px;
     }
-
-
 }
 
 .content-cards {
     display: none;
 }
 
-
-
 @media (min-width: 768px) {
-
     .hidden-all {
         display: none !important;
     }
-    
-    .content2{
+
+    .content2 {
         display: none;
     }
 
-    .content-cards{
-        display: grid;  
+    .content-cards {
+        display: grid;
         grid-template-columns: 250px 250px 250px;
         justify-content: center;
 
@@ -46,14 +40,15 @@
         &__item {
             display: flex;
             justify-content: space-around;
-            width: 100%; /* изменяем фиксированную ширину на 100% */
-            max-width: 240px; /* добавляем максимальную ширину для ограничения */
+            width: 100%;
+            /* изменяем фиксированную ширину на 100% */
+            max-width: 240px;
+            /* добавляем максимальную ширину для ограничения */
             height: 160px;
             border-radius: 6px;
             background-color: rgb(255, 255, 255);
             margin-top: 16px;
             margin-bottom: 16px;
-
 
             img {
                 width: 40px;
@@ -61,31 +56,38 @@
                 align-self: flex-end;
                 margin-bottom: 16px;
             }
-
-        
         }
+
         &__button {
-            margin-right: 40px;
+            margin-right: 100px;
             position: relative;
 
             &::before {
-            content: "";
-            display: inline-block;
-            background-image: url("./img/icon.png");
-            background-repeat: no-repeat;
-            position: absolute;
-            width: 14px;
-            height: 14px;
-            left: 10px;
-            top: 2px;
-            transition: transform 0.3s;
-            transform: rotate(180deg);
+                content: "";
+                display: inline-block;
+                background-image: url("./img/icon.png");
+                background-repeat: no-repeat;
+                position: absolute;
+                width: 14px;
+                height: 14px;
+                left: 1px;
+                top: 2px;
+                transition: transform 0.3s;
+                transform: rotate(180deg);
+            }
+
+            &.button--rotated::before {
+                transform: rotate(0deg);
+            }
+
+
         }
-        }
-        
     }
+}
 
-    
-
+@media (min-width: 1388px) {
+    .content-cards {
+        grid-template-columns: 250px 250px 250px 250px;
+    }
 
 }

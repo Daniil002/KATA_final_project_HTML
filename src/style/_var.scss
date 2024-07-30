@@ -4,12 +4,53 @@ $hover-color: rgb(126, 126, 130);
 $aside-width: 320px;
 $aside-shadow: 5px 0 15px rgba(0, 0, 0, 0.2);
 
+@font-face {
+    // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) 
+    font-family: "TTLakesMedium"; 
+    // адрес шрифта и тип 
+    src: url("./fonts/TTLakes-Medium.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+  } 
+
+// @font-face {
+// // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) 
+//     font-family: "TTLakesBold"; 
+//     // адрес шрифта и тип 
+//     src: url("./fonts/TTLakes-ExtraBold.ttf") format("truetype"); 
+//     font-style: normal; 
+//     font-weight: normal; 
+//   } 
+
+
 
 body {
     background-color:  #F8F8F8;
     overflow-x: hidden;
     height: 100%; /* Устанавливаем высоту на 100% */
     margin: 0; /* Убираем отступы */
+    font-family: "TTLakesMedium";
+
+}
+
+@media (min-width: 1388px) {
+    body {
+        background-color: #FFFFFF;
+    }
+
+    .wrapper {
+        background-color: #F8F8F8;
+    }
+}
+
+
+.wrapper-global {
+    display: flex;
+    
+}
+
+.wrapper {
+    width: 100%;
 }
 
 .hidden {
@@ -24,6 +65,8 @@ button {
     font: inherit;
     color: inherit;
     cursor: pointer;
+    font-family: "TTLakesBold";
+
 }
 
 /* Убираем декорации у ссылок */

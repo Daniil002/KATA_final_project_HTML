@@ -3,6 +3,26 @@
 
     &__title {
         font-size: 28px;
+        position: relative;
+
+        &::before {
+            content: '';
+            background-image: url("./img/highlight.png");
+            width: 4px;
+            height: 40px;
+            position: absolute;
+            left: -15px;
+            top: -4px;
+
+        }
+    }
+
+    &__button--first {
+        display: none;
+    }
+
+    &__button--second {
+        display: none;
     }
 }
 
@@ -39,3 +59,39 @@
 }
 
 
+
+
+@media (min-width: 1388px) {
+    .main-description__button--first {
+        display: inline-block;
+        position: relative;
+        left: 1400px;
+        top: -50px;
+    }
+
+    .main-description__button--second {
+        display: inline-block;
+        position: relative;
+        left: 1460px;
+        top: -50px;
+    }
+
+    .main-description__button--second::before {
+        content: "Статус ремонта";
+        position: relative;
+        top: -14px;
+        left: -10px;
+        
+    }
+
+
+    .main-description__button--first::before {
+        content: "Оставить заявку";
+        position: relative;
+        top: -14px;
+        left: -10px;
+
+    }
+
+
+}

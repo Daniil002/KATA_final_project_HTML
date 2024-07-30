@@ -4,9 +4,10 @@ import "./index.scss";
 
 
 import {mult, sum, swiperFirst, swiperSecond, swiperThird } from "./modules/calc";
-import { buttonContenCard, buttonMain, buttons } from "./modules/buttons-more";
+import { buttonArticleText, buttonContenCard, buttonMain, buttons} from "./modules/buttons-more";
 import { adjustText } from "./modules/text";
-import { modalWindow } from "./modules/modals";
+import { modalContact, modalFeetBack, wrapperModal } from "./modules/modals";
+
 
 
 
@@ -19,5 +20,10 @@ buttonMain()
 buttons()
 buttonContenCard()
 adjustText()
-modalWindow()
+modalContact()
+modalFeetBack()
+wrapperModal()
+buttonArticleText()
+
+
 

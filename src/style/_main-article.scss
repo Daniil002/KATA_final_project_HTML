@@ -4,15 +4,23 @@
     &__button {
         margin-left: 35px;
         position: relative;
+        cursor: pointer;
 
-        &::after {
+        &::before {
             content: "";
+            display: inline-block;
             position: absolute;
             background: url("./img/icon.png") no-repeat;
-            width: 24px;
-            height: 24px;
+            width: 14px;
+            height: 14px;
             left: -23px;
             top: 3px;
+            transition: transform 0.3s;
+            transform: rotate(180deg);
+        }
+    
+        &.button--rotated::before {
+            transform: rotate(0deg);
         }
     }
 }
@@ -47,4 +55,14 @@
         
         
     }
+}
+
+@media (min-width: 1388px) {
+    .main-article {
+        .image {
+            width: 531.35px;
+            height: 383.24px;
+        }
+    }
+
 }
