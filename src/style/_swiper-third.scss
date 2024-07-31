@@ -84,6 +84,7 @@
         }
         p { 
             margin-right: 40px;
+            
         }
     }
 
@@ -94,6 +95,10 @@
         position: relative;
         left: 18px;
         bottom: -20px;
+
+        p {
+            color: $hover-color;
+        }
         
         &__row {
             display: grid;

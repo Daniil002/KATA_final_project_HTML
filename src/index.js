@@ -3,7 +3,7 @@ import "./index.html";
 import "./index.scss";
 
 
-import {mult, sum, swiperFirst, swiperSecond, swiperThird } from "./modules/calc";
+import {swiperFirst, swiperSecond, swiperThird } from "./modules/calc";
 import { buttonArticleText, buttonContenCard, buttonMain, buttons} from "./modules/buttons-more";
 import { adjustText } from "./modules/text";
 import { modalContact, modalFeetBack, wrapperModal } from "./modules/modals";
@@ -11,8 +11,6 @@ import { modalContact, modalFeetBack, wrapperModal } from "./modules/modals";
 
 
 
-console.log(mult(5, 5))
-console.log(sum(5, 5))
 swiperFirst()
 swiperSecond()
 swiperThird()
@@ -24,6 +22,7 @@ modalContact()
 modalFeetBack()
 wrapperModal()
 buttonArticleText()
+
 
 
 

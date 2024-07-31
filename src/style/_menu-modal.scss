@@ -11,7 +11,7 @@
   opacity: 1;
   background-color: rgba(255, 255, 255, 1); // Непрозрачный фон
   height: 100vh;
-  box-shadow: 5px 0 15px rgba(0, 0, 0, 0.2);
+  box-shadow: $aside-shadow;
 
   .modal-menu__list {
     display: flex;
@@ -72,8 +72,8 @@
       margin-left: 16px;
     }
 
-    &__adress--number>a {
-      font-family: "TTLakes-Bold";
+    &__adress--number a {
+      font-family: "TTLakesBold";
       font-size: 26px;
     }
   }

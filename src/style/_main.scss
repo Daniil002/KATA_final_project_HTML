@@ -4,6 +4,7 @@
     &__title {
         font-size: 28px;
         position: relative;
+        font-family: "TTLakesBold";
 
         &::before {
             content: '';
@@ -65,7 +66,7 @@
     .main-description__button--first {
         display: inline-block;
         position: relative;
-        left: 1400px;
+        left: 1200px;
         top: -50px;
     }
 

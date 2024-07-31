@@ -13,15 +13,24 @@ $aside-shadow: 5px 0 15px rgba(0, 0, 0, 0.2);
     font-weight: normal; 
   } 
 
-// @font-face {
-// // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) 
-//     font-family: "TTLakesBold"; 
-//     // адрес шрифта и тип 
-//     src: url("./fonts/TTLakes-ExtraBold.ttf") format("truetype"); 
-//     font-style: normal; 
-//     font-weight: normal; 
-//   } 
+@font-face {
+// название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) 
+    font-family: "TTLakesBold"; 
+    // адрес шрифта и тип 
+    src: url("./fonts/TTLakes-Bold.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+  } 
 
+
+@font-face {
+    // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) 
+        font-family: "TTLakes-Regular"; 
+        // адрес шрифта и тип 
+        src: url("./fonts/TTLakes-Regular.ttf") format("truetype"); 
+        font-style: normal; 
+        font-weight: normal; 
+      } 
 
 
 body {
@@ -31,6 +40,10 @@ body {
     margin: 0; /* Убираем отступы */
     font-family: "TTLakesMedium";
 
+}
+
+.no-scroll {
+    overflow: hidden;
 }
 
 @media (min-width: 1388px) {
@@ -65,8 +78,15 @@ button {
     font: inherit;
     color: inherit;
     cursor: pointer;
-    font-family: "TTLakesBold";
+    font-family: "TTLakes-Regular";
+    font-weight: bold;
+    
 
+}
+
+h2,h3 {
+    font-family: "TTLakes-Regular";
+    font-weight: lighter;
 }
 
 /* Убираем декорации у ссылок */
