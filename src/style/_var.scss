@@ -5,18 +5,14 @@ $aside-width: 320px;
 $aside-shadow: 5px 0 15px rgba(0, 0, 0, 0.2);
 
 @font-face {
-    // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) 
     font-family: "TTLakesMedium"; 
-    // адрес шрифта и тип 
     src: url("./fonts/TTLakes-Medium.ttf") format("truetype"); 
     font-style: normal; 
     font-weight: normal; 
   } 
 
 @font-face {
-// название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) 
     font-family: "TTLakesBold"; 
-    // адрес шрифта и тип 
     src: url("./fonts/TTLakes-Bold.ttf") format("truetype"); 
     font-style: normal; 
     font-weight: normal; 
@@ -24,9 +20,7 @@ $aside-shadow: 5px 0 15px rgba(0, 0, 0, 0.2);
 
 
 @font-face {
-    // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) 
         font-family: "TTLakes-Regular"; 
-        // адрес шрифта и тип 
         src: url("./fonts/TTLakes-Regular.ttf") format("truetype"); 
         font-style: normal; 
         font-weight: normal; 
@@ -109,3 +103,6 @@ aside {
 
 
 
+.swiper-wrapper {
+    padding-bottom: 50px;
+}

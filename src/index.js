@@ -11,9 +11,7 @@ import { modalContact, modalFeetBack, wrapperModal } from "./modules/modals";
 
 
 
-// swiperFirst()
-swiperSecond()
-// swiperThird()
+
 buttonMain()
 buttons()
 buttonContenCard()

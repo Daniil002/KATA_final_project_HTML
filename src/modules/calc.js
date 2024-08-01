@@ -2,6 +2,7 @@ import Swiper from "swiper";
 import "swiper/scss";
 import "swiper/scss/navigation";
 import "swiper/scss/pagination";
+import { Navigation, Pagination } from 'swiper/modules'
 
 
 
@@ -28,40 +29,21 @@ import "swiper/scss/pagination";
 //   });
 // }
 
-export function swiperSecond() {
-  window.addEventListener("DOMContentLoaded", () => {
-    const swiper = new Swiper(".swiper2", {
-      slidesPerView: 1.5,
-      spaceBetween: 16,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-        bulletClass: "swiper-pagination-bullet",
-        bulletActiveClass: "swiper-pagination-bullet-active",
-        
-      },
-      
-    });
-    const paginationBullets = document.querySelectorAll('.pagination-first .swiper-pagination-bullet');
-    console.log('Pagination bullets:', paginationBullets);
-    console.log(swiper);
+
+window.addEventListener("DOMContentLoaded", () => {
+  const swiper = new Swiper(".swiper", {
+    modules: [Navigation, Pagination],
+    slidesPerView: 1.5,
+    spaceBetween: 16,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      bulletClass: 'swiper-pagination-bullet',
+      bulletActiveClass: 'swiper-pagination-bullet-active',
+    },
+
   });
-  console.log('Swiper1 initialized');
-  
-}
+
+});
 
 
-// export function swiperThird() {
-//   window.addEventListener("DOMContentLoaded", () => {
-//     const swiper = new Swiper(".swiper3", {
-//       slidesPerView: 1.5,
-//       spaceBetween: 16,
-//       pagination: {
-//         el: ".pagination-first",
-//         clickable: true,
-//         bulletClass: "swiper-pagination-bullet",
-//         bulletActiveClass: "swiper-pagination-bullet-active",
-//       },
-//     });
-//   })
-// }
