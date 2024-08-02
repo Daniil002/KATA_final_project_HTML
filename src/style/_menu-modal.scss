@@ -130,4 +130,35 @@
     
   }
 
+
+  .modal-point {
+    margin-left: 20px;
+    margin-top: 37px;
+
+    &__item {
+      margin-bottom: 32px;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        background-image: url("./img/highlight.png");
+        width: 4px;
+        height: 32px;
+        left: -20px;
+        top: -5px;
+        bottom: 83.11%;
+        display: none;
+      }
+
+      &:hover::before {
+        display: block;
+      }
+
+      &:hover {
+        color: $hover-color;
+      }
+    }
+  }
+
 }
