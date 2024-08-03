@@ -20,15 +20,29 @@
         border: 1px solid rgb(234, 234, 234);
         border-radius: 6px;
         background: rgb(255, 255, 255);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        
+        a img {
+            margin-right: 16px;
+        }
+
 
     }
 
     .content-card__images--block {
-        margin-top: 16px;
         display: flex;
         justify-content: space-between;
         margin-left: 16px;
         margin-right: 16px;
+        align-items: center;
+
+
+        .content-card__image-first {
+            align-self: center;
+        }
     }
 
     .button {
